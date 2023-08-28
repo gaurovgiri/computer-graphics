@@ -15,8 +15,8 @@ void drawPixel(int x, int y)
 
 void drawBLA()
 {
-    int dx = x_2 - x_1;
-    int dy = y_2 - y_1;
+    int dx = abs(x_2 - x_1);
+    int dy = abs(y_2 - y_1);
     int x_inc, y_inc, p;
     if (x_2 >= x_1)
         x_inc = 1;
@@ -36,7 +36,7 @@ void drawBLA()
     if (dx > dy)
     {
         p = 2 * dy - dx;
-        for (int k = 0; k < abs(dx); k++)
+        for (int k = 0; k < dx; k++)
         {
             if (p < 0)
             {
@@ -56,11 +56,10 @@ void drawBLA()
     else
     {
         p = 2 * dx - dy;
-        for (int k = 0; k < abs(dy); k++)
+        for (int k = 0; k < dy; k++)
         {
             if (p < 0)
             {
-                x += x_inc;
                 y += y_inc;
                 p = p + 2 * dx;
             }
