@@ -1,7 +1,6 @@
 /* OpenGL Implementation for DDA (Differential Digital Analyzer) */
 
 #include <iostream>
-#include <GL/gl.h>
 #include <GL/glut.h>
 
 using namespace std;
