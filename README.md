@@ -18,3 +18,4 @@ This repository contains implementation of raster based lines and shapes drawing
 - [dda.cpp](dda.cpp) : Digital Differential Analyzer
 - [bla.cpp](bla.cpp) : Bresenham Line-Drawing Algorithm
 - [circle.cpp](circle.cpp) : Circle Drawing Using Mid-Point Algorithm
+- [ellipse.cpp](ellipse.cpp): Ellipse Drawing Using Mid-Point Algorithm
