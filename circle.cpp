@@ -22,9 +22,15 @@ void drawCircle()
     int x = 0, y = r;
     int p = 1 - r;
 
-    drawPixel(x + xc, y + yc);
-    drawPixel(x + xc, -y + yc);
-
+    drawPixel(y + xc, x + xc);   // (y,x)
+    drawPixel(x + xc, y + yc);   // (x,y)
+    drawPixel(x + xc, -y + yc);  // (x,-y)
+    drawPixel(y + xc, -x + yc);  // (y,-x)
+    drawPixel(-y + xc, -x + yc); // (-y, -x)
+    drawPixel(-x + xc, -y + yc); // (-x, -y)
+    drawPixel(-x + xc, y + yc);  // (-x, y)
+    drawPixel(-y + xc, x + yc);  // (-y, x)
+    
     while (y >= x)
     {
         if (p < 0)
