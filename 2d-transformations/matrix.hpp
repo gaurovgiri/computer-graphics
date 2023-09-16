@@ -19,12 +19,11 @@ public:
     Matrix operator*(const Matrix& other);
     Matrix operator-(const Matrix& other);
 
-
-    friend std::iostream operator<<(std::ostream& os, const Matrix& matrix);
+    friend std::ostream operator<<(std::ostream& os, const Matrix& matrix);
+    friend std::istream operator>>(std::istream& is, const Matrix& matrix);
 
     int rows();
     int cols();
-
     
     ~Matrix();
 };
